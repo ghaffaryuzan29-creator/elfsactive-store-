@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#4a8af4"><link rel="manifest" href="/manifest.webmanifest"><link rel="apple-touch-icon" href="/icons/apple-touch-icon.png"><meta name="robots" content="noindex,nofollow"><title>Sign in · GrowbizApp</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>*{box-sizing:border-box}html,body{margin:0;height:100%}body{font-family:'Figtree',-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif;background:#e8edf8;color:#1d1d1f;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:20px;padding:24px}
+.card{width:100%;max-width:380px;background:#fff;border-radius:24px;padding:32px 28px;box-shadow:0 8px 30px rgba(40,60,120,.10);display:flex;flex-direction:column;gap:18px}
+.mark{font-weight:700;font-size:26px;letter-spacing:-.03em}.mark span{color:#4a8af4}
+h1{margin:0;font-size:15px;font-weight:500;color:#6e6e73;line-height:1.5}
+label{font-size:12px;font-weight:600;color:#6e6e73}
+input{width:100%;margin-top:6px;padding:12px 14px;border:1px solid #e2e2e8;border-radius:12px;font:inherit;font-size:15px;outline:none}input:focus{border-color:#4a8af4;box-shadow:0 0 0 3px rgba(74,138,244,.18)}
+button{border:0;border-radius:12px;background:#4a8af4;color:#fff;font:inherit;font-weight:600;font-size:15px;padding:12px;cursor:pointer}button:hover{background:#2f66c9}
+.err{display:none;background:#fdecea;color:#b4432f;border-radius:10px;padding:9px 12px;font-size:13px}.show .err{display:block}
+small{font-size:12px;color:#86868b}</style></head>
+<body><form class="card" method="post" action="/api/login" id="f"><div class="mark">Growbiz<span>App</span></div><h1>TikTok Content OS for ELFS Active Store. Enter the team access code to continue.</h1>
+<div class="err">Wrong access code. Try again.</div>
+<div><label for="c">Access code</label><input id="c" name="code" type="password" autocomplete="current-password" autofocus required></div>
+<button type="submit">Sign in</button></form>
+<small>© <span id="y"></span> Growbiz. All rights reserved.</small>
+<script>document.getElementById('y').textContent=new Date().getFullYear();if(location.search.indexOf('e=1')>-1)document.getElementById('f').classList.add('show')</script></body></html>
